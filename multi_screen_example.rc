@@ -1,0 +1,4 @@
+hardstatus alwayslastline "[%H]%{bw}%-Lw%{= rw}%50>%n%f* %t%{-}%+Lw%< %{gk}%-19=%C%a %D,%d %M "
+monitor on
+screen -t THING1 -e /bin/echo
+screen -t TICKLER -e /usr/bin/mutt -F ~/.muttrc_maildir -f ~/.maildir/tickler
