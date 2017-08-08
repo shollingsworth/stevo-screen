@@ -4,8 +4,9 @@ term screen-256color
 shelltitle "$ | bash"
 # Here comes the pain...
 caption always "%{=b bw}:%{-b bw}:%{=b bk}[ %?%{-b bw}%-Lw%?%{+b bk}%{+b br}(%{+b bw}%n:%t%{+b bk}%{+b br})%?(%u)%?%{-b bw}%?%{-b bw}%+Lw%? %{=b bk} %=]%{-b bw}:%{+b bw}:"
-backtick 2 5 5 $HOME/bin/vpninfo
-backtick 3 1 1 $HOME/bin/gitinfo
+#status programs can go here
+backtick 2 5 5 echo
+backtick 3 1 1 echo
 #24 hr
 hardstatus alwayslastline "%{+b bw}:%{-b bw}:%{+b bk}[%{-b bg} %0c:%s %{=b bk}][%{-b rw}%2`%{+b bk}] %=[ %{+b br}%3`%{=b bk} ]%{-b bw}:%{+b bw}:%<"
 sorendition "-b dw"
